@@ -31,7 +31,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let tabBarController=UITabBarController()
         self.window?.rootViewController=tabBarController
         
-        let firstCtl=FirstViewController(nibName: "FirstViewController", bundle: Bundle.main)
+        let firstCtl=FirstViewController(nibName: "FirstViewController", bundle: nil)
         let firstNav=UINavigationController(rootViewController: firstCtl)
         UINavigationBar.appearance().tintColor = UIColor.white
         UINavigationBar.appearance().barTintColor = UIColor(red: 231.0/255.0, green: 95.0/255.0, blue: 53.0/255.0, alpha: 0.3) //修改导航栏背景色
